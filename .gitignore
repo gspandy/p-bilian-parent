@@ -1,0 +1,15 @@
+*.iml
+.idea
+.idea/**
+/target/
+/disconf/
+contract-service.properties
+contract-service.properties.lock
+contract-eweb.properties
+contract-eweb.properties.lock
+contract-bweb.properties
+contract-bweb.properties.lock
+.settings
+.project
+.classpath
+/p-bilian/target/MANIFEST.MF
