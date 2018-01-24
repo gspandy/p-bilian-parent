@@ -10,7 +10,7 @@
     </appender>
 
     <appender name="infoLog" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/logs/p-longyi-contract-eweb/info.log"/>
+        <param name="File" value="/logs/p-bilian-eweb/info.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern"
@@ -24,7 +24,7 @@
         </filter>
     </appender>
     <appender name="warnLog" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/logs/p-longyi-contract-eweb/warn.log"/>
+        <param name="File" value="/logs/p-bilian-eweb/warn.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern"
@@ -38,7 +38,7 @@
         </filter>
     </appender>
     <appender name="errorLog" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/logs/p-longyi-contract-eweb/error.log"/>
+        <param name="File" value="/logs/p-bilian-eweb/error.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern"

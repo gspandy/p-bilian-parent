@@ -3,7 +3,7 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
     <appender name="infoLog" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/logs/p-longyi-contract-service/info.log"/>
+        <param name="File" value="/logs/p-bilian-service/info.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%p]-[%t]-[%l] %m%n"/>
@@ -16,7 +16,7 @@
         </filter>
     </appender>
     <appender name="warnLog" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/logs/p-longyi-contract-service/warn.log"/>
+        <param name="File" value="/logs/p-bilian-service/warn.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%p]-[%t]-[%l] %m%n"/>
@@ -29,7 +29,7 @@
         </filter>
     </appender>
     <appender name="errorLog" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="/logs/p-longyi-contract-service/error.log"/>
+        <param name="File" value="/logs/p-bilian-service/error.log"/>
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%p]-[%t]-[%l] %m%n"/>

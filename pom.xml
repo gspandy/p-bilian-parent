@@ -13,6 +13,7 @@
         <module>p-bilian-common</module>
         <module>p-bilian-web</module>
         <module>p-bilian-api</module>
+        <module>p-bilian-job</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

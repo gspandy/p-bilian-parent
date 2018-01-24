@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * <p><b>introduction:</b>
  * </p>
  * <p><b>packageName:</b>com.chinaredstar.dubbo.api.enums</p>
- * <p><b>projectName:</b>p-longyi-contract-parent</p>
+ * <p><b>projectName:</b>p-bilian-parent</p>
  * <p><b>User:</b> xuxiaoming <a href="mailto:xu.xiaoming535@chinaredstar.com">xu.xiaoming535@chinaredstar.com</a></p>
  * <p><b>Date:</b>2018/1/16</p>
  *

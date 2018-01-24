@@ -20,16 +20,16 @@
         </javaTypeResolver>
         <!--targetProject请使用绝对路径-->
         <javaModelGenerator targetPackage="com.chinaredstar.jdbc.po"
-                            targetProject="/Users/liuchaobing/code/p-longyi-contract-parent/p-longyi-contract/p-longyi-contract-service/src/main/java2">
+                            targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/java2">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <sqlMapGenerator targetPackage="com.chinaredstar.jdbc.dao"
-                         targetProject="/Users/liuchaobing/code/p-longyi-contract-parent/p-longyi-contract/p-longyi-contract-service/src/main/resources2">
+                         targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/resources2">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.chinaredstar.jdbc.dao"
-                             targetProject="/Users/liuchaobing/code/p-longyi-contract-parent/p-longyi-contract/p-longyi-contract-service/src/main/java2">
+                             targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/java2">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="template_split" enableCountByExample="true"
