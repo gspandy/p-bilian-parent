@@ -8,7 +8,7 @@ import java.util.Properties;
 
 /**
  * Created by IntelliJ IDEA
- * User:杨果
+ * User:徐晓鸣
  * Date:15/8/20
  * Time:下午4:07
  * <p/>
