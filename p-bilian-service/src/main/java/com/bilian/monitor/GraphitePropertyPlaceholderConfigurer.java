@@ -16,7 +16,7 @@ import java.util.Properties;
  * <p/>
  * 加载Graphite的配置文件
  */
-public class GraphitePropertyPlaceholderConfigurer extends PropertyPlaceholderConfigurer {
+public class GraphitePropertyPlaceholderConfigurer  extends PropertyPlaceholderConfigurer {
     public static final String ip = NetUtils.getLocalHost();
     public static final String appName = PropertiesUtil.getProperty("disconf.properties").get("disconf.app");
     public static final String metricsPrefix = appName + "." + ip.replaceAll("\\.", "_");
