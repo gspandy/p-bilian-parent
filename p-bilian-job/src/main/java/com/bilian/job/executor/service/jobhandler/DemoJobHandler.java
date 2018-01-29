@@ -4,6 +4,8 @@ import com.xxl.job.core.biz.model.ReturnT;
 import com.xxl.job.core.handler.IJobHandler;
 import com.xxl.job.core.handler.annotation.JobHandler;
 import com.xxl.job.core.log.XxlJobLogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
@@ -24,9 +26,13 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class DemoJobHandler extends IJobHandler {
 
+
+	private static Logger logger = LoggerFactory.getLogger(DemoJobHandler.class);
+
 	@Override
 	public ReturnT<String> execute(String param) throws Exception {
 		XxlJobLogger.log("XXL-JOB, Hello World.");
+		logger.info("helloworld");
 
 		for (int i = 0; i < 5; i++) {
 			XxlJobLogger.log("beat at:" + i);
