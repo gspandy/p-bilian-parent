@@ -1,7 +1,7 @@
 package com.bilian.controller;
 
 import com.bilian.result.ResultResponse;
-import com.wordnik.swagger.annotations.*;
+import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
