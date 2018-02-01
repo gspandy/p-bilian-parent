@@ -8,28 +8,28 @@
         <!--<commentGenerator>-->
         <!--<property name="suppressAllComments" value="false"/>-->
         <!--</commentGenerator>-->
-        <commentGenerator type="com.bilian.MyCommentGenerator">
+        <commentGenerator type="com.bilian.dubbo.MyCommentGenerator">
         </commentGenerator>
         <!-- 生发环境数据库配置:修改配置 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://db201.dev.rs.com:3306/db_contract?useSSL=false"
-                        userId="contract" password="contract_user">
+                        connectionURL="jdbc:mysql://localhost:3306/db_contract?useSSL=false"
+                        userId="root" password="root">
         </jdbcConnection>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--targetProject请使用绝对路径-->
         <javaModelGenerator targetPackage="com.bilian.jdbc.po"
-                            targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/java2">
+                            targetProject="D:\新建文件夹\新建文件夹">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <sqlMapGenerator targetPackage="com.bilian.jdbc.dao"
-                         targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/resources2">
+                         targetProject="D:\新建文件夹\新建文件夹">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.bilian.jdbc.dao"
-                             targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/java2">
+                             targetProject="D:\新建文件夹\新建文件夹">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="template_split" enableCountByExample="true"
