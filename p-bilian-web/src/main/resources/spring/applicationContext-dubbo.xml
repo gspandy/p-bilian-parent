@@ -7,6 +7,6 @@
 
 
 
-    <!--<dubbo:reference interface="com.chinaredstar.dubbo.api.ISapPushContractDubboService" id="sapPushContractDubboService" timeout="60000" retries="0"
-                     check="false" version="${dubbo.env}" url="dubbo://localhost:54300"     />-->
+    <dubbo:reference  id="demoService" interface="com.bilian.dubbo.api.IWeService"  timeout="60000" retries="0"
+                     check="false" version="${dubbo.env}"    />
 </beans>

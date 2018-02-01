@@ -1,9 +1,11 @@
 package com.bilian.controller;
 
+import com.bilian.dubbo.api.IWeService;
 import com.bilian.result.ResultResponse;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +26,8 @@ import org.springframework.web.bind.annotation.*;
 public class DemoController {
 
     private static Logger logger = LoggerFactory.getLogger(DemoController.class);
+    @Autowired
+    private IWeService weService;
 
 
 
@@ -38,7 +42,7 @@ public class DemoController {
     @RequestMapping(value = "getMethod", method = {RequestMethod.GET})
     public ResultResponse<Object> getMethod(@ApiParam(name = "id", value = "id", required = true)
                                                 @RequestParam(value = "id") Long id){
-
+        weService.demoServiceMethod();
 
         return  new ResultResponse<Object>().success("hello getMethod");
     }

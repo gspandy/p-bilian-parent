@@ -80,7 +80,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:sqlMapConfig.xml"/>
-        <property name="typeAliasesPackage" value="com.chinaredstar.jdbc.po"/>
+        <property name="typeAliasesPackage" value="com.bilian.jdbc.po"/>
         <!-- 配置分页插件 -->
         <property name="plugins">
             <array>
@@ -96,7 +96,7 @@
     </bean>
 
     <bean class="com.bilian.db.MapperScannerConfigurer">
-        <property name="basePackage" value="com.chinaredstar.jdbc.dao"/>
+        <property name="basePackage" value="com.bilian.jdbc.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 

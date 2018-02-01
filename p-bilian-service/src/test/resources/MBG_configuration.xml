@@ -8,7 +8,7 @@
         <!--<commentGenerator>-->
         <!--<property name="suppressAllComments" value="false"/>-->
         <!--</commentGenerator>-->
-        <commentGenerator type="com.chinaredstar.MyCommentGenerator">
+        <commentGenerator type="com.bilian.MyCommentGenerator">
         </commentGenerator>
         <!-- 生发环境数据库配置:修改配置 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
@@ -19,16 +19,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--targetProject请使用绝对路径-->
-        <javaModelGenerator targetPackage="com.chinaredstar.jdbc.po"
+        <javaModelGenerator targetPackage="com.bilian.jdbc.po"
                             targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/java2">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="com.chinaredstar.jdbc.dao"
+        <sqlMapGenerator targetPackage="com.bilian.jdbc.dao"
                          targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/resources2">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.chinaredstar.jdbc.dao"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.bilian.jdbc.dao"
                              targetProject="/Users/liuchaobing/code/p-bilian-parent/p-bilian/p-bilian-service/src/main/java2">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

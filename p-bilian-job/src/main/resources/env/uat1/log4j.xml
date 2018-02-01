@@ -49,7 +49,7 @@
         </layout>
     </appender>
 
-    <logger name="com.chinaredstar" additivity="true">
+    <logger name="com.bilian" additivity="true">
         <level value="trace"/>
     </logger>
 
