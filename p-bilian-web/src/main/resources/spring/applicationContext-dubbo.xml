@@ -7,6 +7,6 @@
 
 
 
-    <dubbo:reference  id="demoService" interface="com.bilian.dubbo.api.IWeService"  timeout="60000" retries="0"
-                     check="false" version="${dubbo.env}"    />
+    <dubbo:reference  id="weService" interface="com.bilian.dubbo.api.IWeService"  timeout="60000" retries="0"
+                     check="false" version="${dubbo.env}"  url="dubbo://localhost:43210"  />
 </beans>

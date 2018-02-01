@@ -19,7 +19,8 @@ import org.springframework.stereotype.Service;
 class WeService implements IWeService {
 
     @Override
-    public void demoServiceMethod() {
+    public String demoServiceMethod() {
+        return "hello service";
 
     }
 }

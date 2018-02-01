@@ -27,7 +27,7 @@ import static org.springframework.util.Assert.notNull;
  *
  * @author Eduardo Macarron
  * @version $Id$
- * @see com.chinaredstar.perseus.db.DynamicSqlSessionTemplate
+ *
  */
 public class MapperFactoryBean<T> extends SqlSessionDaoSupport implements FactoryBean<T> {
 

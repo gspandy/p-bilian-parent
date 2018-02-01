@@ -26,6 +26,8 @@ import org.springframework.web.bind.annotation.*;
 public class DemoController {
 
     private static Logger logger = LoggerFactory.getLogger(DemoController.class);
+
+
     @Autowired
     private IWeService weService;
 
@@ -42,9 +44,9 @@ public class DemoController {
     @RequestMapping(value = "getMethod", method = {RequestMethod.GET})
     public ResultResponse<Object> getMethod(@ApiParam(name = "id", value = "id", required = true)
                                                 @RequestParam(value = "id") Long id){
-        weService.demoServiceMethod();
+       String result=  weService.demoServiceMethod();
 
-        return  new ResultResponse<Object>().success("hello getMethod");
+        return  new ResultResponse<Object>().success(result);
     }
 
 

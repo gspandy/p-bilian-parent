@@ -14,5 +14,5 @@ package com.bilian.dubbo.api;
 public interface IWeService {
 
 
-    void demoServiceMethod();
+    String demoServiceMethod();
 }
